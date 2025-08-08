@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Roshu!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="hearts" id="hearts-container"></div>
+    <div id="balloons-container"></div>
+    
+    <div class="container">
+        <header>
+            <div class="birthday-cake">🎂</div>
+            <h1>Happy Birthday Roshu!</h1>
+            <p class="subtitle">Celebrating the most amazing sister in the world</p>
+        </header>
+        
+        <div class="hero">
+            <div class="photo-frame">
+                <img src="images/roshu.jpg" alt="Roshu" id="profileImage">
+            </div>
+            
+            <div class="message-box">
+                <p class="message">
+                    Dear Roshu, on your special day, I want you to know how much you mean to me. You're not just my sister, 
+                    but my best friend, my confidante, and my partner in crime. Your laughter brightens my darkest days, 
+                    and your support gives me strength when I need it most. May this year bring you endless joy, success in 
+                    all your endeavors, and love that fills your heart to overflowing. You deserve the world and more!
+                </p>
+                <div class="signature">With all my love</div>
+            </div>
+        </div>
+        
+        <div class="name-section">
+            <h2 class="section-title">R O S H U</h2>
+            <div class="name-letters">
+                <div class="letter">R</div>
+                <div class="letter">O</div>
+                <div class="letter">S</div>
+                <div class="letter">H</div>
+                <div class="letter">U</div>
+            </div>
+        </div>
+        
+        <div class="cake-section">
+            <h2 class="section-title">Blow Out Your Candle!</h2>
+            <p class="subtitle">Make a wish and blow out your birthday candle</p>
+            
+            <div class="cake-container">
+                <div class="plate"></div>
+                <div class="cake"></div>
+                <div class="candle">
+                    <div class="flame" id="flame"></div>
+                    <div class="smoke" id="smoke"></div>
+                </div>
+            </div>
+            
+            <div class="instructions" id="instructions">
+                <p>Tap the button below, then blow into your microphone to blow out the candle!</p>
+                <button class="permission-btn" id="permissionBtn">Enable Microphone</button>
+                <p class="manual-blowout" style="margin-top: 0.5rem; font-size: 0.8rem;">Or <a href="#" id="manualBlowout" style="color: #ff6b9d; text-decoration: none; font-weight: 600;">click here</a> to blow out manually</p>
+            </div>
+            
+            <p class="cake-message" id="cakeMessage"></p>
+        </div>
+        
+        <div class="memories-section">
+            <h2 class="section-title">Our Beautiful Memories</h2>
+            <div class="memory-icons">
+                <div class="memory-icon">
+                    <i class="fas fa-camera"></i>
+                    <span>Photos</span>
+                </div>
+                <div class="memory-icon">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Beach Days</span>
+                </div>
+                <div class="memory-icon">
+                    <i class="fas fa-tree"></i>
+                    <span>Holiday Traditions</span>
+                </div>
+                <div class="memory-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Graduation</span>
+                </div>
+                <div class="memory-icon">
+                    <i class="fas fa-car"></i>
+                    <span>Road Trips</span>
+                </div>
+                <div class="memory-icon">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Game Nights</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wishes-section">
+            <h2 class="section-title">My Wishes For You</h2>
+            
+            <div class="wish">
+                <div class="wish-icon"><i class="fas fa-laugh-beam"></i></div>
+                <div class="wish-content">
+                    <h3>Happiness</h3>
+                    <p>May your life be filled with laughter, joy, and countless moments of pure happiness.</p>
+                </div>
+            </div>
+            
+            <div class="wish">
+                <div class="wish-icon"><i class="fas fa-heartbeat"></i></div>
+                <div class="wish-content">
+                    <h3>Health</h3>
+                    <p>Wishing you robust health and energy to enjoy all the wonderful things life has to offer.</p>
+                </div>
+            </div>
+            
+            <div class="wish">
+                <div class="wish-icon"><i class="fas fa-heart"></i></div>
+                <div class="wish-content">
+                    <h3>Love</h3>
+                    <p>May you always be surrounded by people who love and appreciate you as much as I do.</p>
+                </div>
+            </div>
+            
+            <div class="wish">
+                <div class="wish-icon"><i class="fas fa-trophy"></i></div>
+                <div class="wish-content">
+                    <h3>Success</h3>
+                    <p>May all your dreams come true and your efforts be rewarded with great success.</p>
+                </div>
+            </div>
+            
+            <div class="wish">
+                <div class="wish-icon"><i class="fas fa-map-marked-alt"></i></div>
+                <div class="wish-content">
+                    <h3>Adventure</h3>
+                    <p>Wishing you exciting new experiences and adventures that create beautiful memories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <audio id="birthdaySong" loop preload="auto">
+        <source src="images/audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="audio-player" id="audioPlayer">
+        <i class="fas fa-music"></i>
+    </div>
+    
+    <div class="scroll-indicator" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    
+    <footer>
+        <p class="footer-message">Wishing you the happiest of birthdays!</p>
+        <p>Made with <span class="pulse">❤</span> for Roshu</p>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="copyright">© 2023 Birthday Wishes for Roshu</p>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
